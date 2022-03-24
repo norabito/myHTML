@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+	  <title>庭園簡介</title>
+     
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  
+	  <link rel="stylesheet" type="text/css" href="mystyle.css">
+      
+	  <script>
+		   
+		   i = 0;
+		   
+		   pic = ["img/pic1.jpg",
+				  "img/pic2.jpg",
+				  "img/pic3.jpg",
+				  "img/pic4.jpg",
+				  "img/pic5.jpg"];
+		   
+		   function f(y){
+				if(i == 0 && y == -1){
+					i = pic.length - 1;
+					document.getElementById("demo").innerHTML = "<img src='" + pic[i] + "'>" ;
+							 }
+				else{
+					i = (i + y)%pic.length;	
+					document.getElementById("demo").innerHTML = "<img src='" + pic[i] + "'>" ;
+							 }
+							 };	
+			function g(){
+				i = (i + 1)%pic.length;
+				document.getElementById("demo").innerHTML = "<img src='" + pic[i] + "'>" ;
+			   				 };
+			
+			
+	   </script>	
+	   
+	  
+	   <style>
+			
+			a#fir:hover {
+				background-color:lightgrey; }
+			a#sec:hover {
+				background-color:lightgrey; }
+			
+			@media only screen and (max-width: 2000px) {
+		
+				img.backz {
+					height:100%;} 
+				div#demo {
+					margin-right:30px;
+					margin-left:50px;
+					width: 500px;
+					margin-bottom:0px;
+					padding-bottom:0px;
+					border-bottom:0px;
+					 } 
+				
+				a#fir {
+					background-color:black;
+					margin-left:50px;
+					margin-top:0px;
+					margin-right:225px; } 
+				a#sec {
+					background-color:black;
+					margin-left:50px;
+					margin-top:0px; } }
+	  
+	    	@media only screen and (max-width: 1500px) {
+		
+				img.backz {
+					height:100%;} 
+				div#demo {
+					margin-right:30px;
+					margin-left:50px;
+					width: 500px;
+					margin-bottom:0px;
+					padding-bottom:0px;
+					border-bottom:0px;
+					 } 
+				
+				a#fir {
+					background-color:black;
+					margin-left:50px;
+					margin-top:0px;
+					margin-right:225px; } 
+				a#sec {
+					background-color:black;
+					margin-left:50px;
+					margin-top:0px; } }
+			
+			@media only screen and (max-width: 900px) {
+				h4 {
+					text-align:center; }
+				img.inside {
+					position:relative;
+					left:150px;
+					float:none;
+					width:400px; }
+				div#demo {
+					position:relative;
+					left:100px;
+					width:400px;
+					margin-bottom:0px;
+					padding-bottom:0px;
+					border-bottom:0px; }
+				
+				a#fir {
+					background-color:black;
+					margin-left:150px;
+					margin-top:0px;}
+				a#sec {
+					background-color:black;
+					margin-left:-45px;
+					margin-top:0px; }
+				
+				img.backz {
+					height:100%; } }
+			
+			
+			@media only screen and (max-width: 600px) {
+				h4 {
+					text-align:center; }
+				img.inside {
+					position:relative;
+					left:80px;
+					float:none;
+					width:300px; }
+				div#demo {
+					position:relative;
+					left:50px;
+					width:300px;
+					margin-bottom:0px;
+					padding-bottom:0px;
+					border-bottom:0px; }
+				a#fir {
+					background-color:black;
+					margin-left:100px;
+					margin-top:0px;}
+				a#sec {
+					background-color:black;
+					margin-left:-145px;
+					margin-top:0px; }
+				img.backz {
+					height:100%; } }
+		
+			@media only screen and (max-width: 450px) {
+				h4 {
+					text-align:center; }
+				img.inside {
+					position:relative;
+					left:50px;
+					float:none;
+					width:300px; }
+				div#demo {
+					position:relative;
+					left:10px;
+					width:300px;
+					margin-bottom:0px;
+					padding-bottom:0px;
+					border-bottom:0px; }
+				
+				a#fir {
+					background-color:black;
+					margin-left:60px;
+					margin-top:0px;}
+				a#sec {
+					background-color:black;
+					margin-left:-145px;
+					margin-top:0px; }
+				
+				img.backz {
+					height:100%; } }
+		</style>
+							 
+    </head>
+
+    <body>
+	
+	  <img class="backz back_ground" src="img/content_back_ground.jpg" width="105%">
+	  
+	  <nav class="hide-on-med-and-down">
+		<div class="nav-wrapper">
+			<a href="index.html" class="brand-logo">日式庭園與日本三名園</a>
+			<ul id="nav-mobile" class="right">
+				<li class="big"><a href="庭園簡介.html">庭園簡介</a></li>
+				<li class="big"><a href="庭園分類.html">庭園分類</a></li>
+				<li class="big"><a href="日本三名園.html">日本三名園</a></li>
+			</ul>
+		</div>
+	  </nav>
+	  
+	 
+	  <nav class="show-on-medium-and-down hide-on-large-only">
+		<div class="nav-wrapper">
+			<a href="index.html" class="center brand-logo" style="width:300px">日式庭園與日本三名園</a>
+			<ul class="left drop-down-menu">
+				<li><button><i class="material-icons">menu</i></button>
+				 <ul style="background-color:black">
+					<li class="small"><a href="庭園簡介.html">庭園簡介</a></li>			
+					<li class="small"><a href="庭園分類.html">庭園分類</a></li>
+					<li class="small"><a href="日本三名園.html">日本三名園</a></li>
+				 </ul>
+				</li>
+			</ul>
+		</div>
+	  </nav>
+	  
+	  <h4>日式庭園簡介</h4>
+	  <br>
+	  
+	 
+	  
+	  <img class="inside" src="img/first_pic.jpg" width="500px">
+	  <div style="margin-top:50px;">
+		<p>日式庭園，也稱和風庭園，指的是日本傳統的庭園，可在日本寺院、宅邸和公共設施的造景看到。</p>
+		<p>日本庭園是依循日本神道、佛教或禪宗中自然與人的關係之哲學所創造的庭園。普遍具有簡單、不對稱設計的特色，以修剪過的常綠樹為主，通常包括橋梁、岩石、踏腳石、有耙紋的砂礫地以及石燈籠，以營造一個用來冥想和沉思的環境。</p>
+		<p>常見的庭園，如大家耳熟能詳的金閣寺及銀閣寺、著名的日本三名園，還有一些日本各地大大小小的庭園，值得我們去一探究竟。</p>
+	  </div>
+	
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <div id="demo"> 
+		<img src="img/pic1.jpg">
+	  </div>
+	  
+	  <script>
+		var myvar = setInterval(g,5000);
+	  </script>
+	 
+	  <a  class="waves-effect waves-light btn" id="fir" href="javascript:f(-1);" onclick="clearInterval(myvar);myvar = setInterval(g,5000)"><i class="material-icons left">chevron_left</i>上一張</a>
+	  <a  class="waves-effect waves-light btn" id="sec" href="javascript:f(1);"  onclick="clearInterval(myvar);myvar = setInterval(g,5000)"><i class="material-icons right">chevron_right</i>下一張</a>
+
+	  
+
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <h5 style="padding-top:30px;padding-bottom:30px;width:100%;border-top:1px solid black;"><b>更多相關主題:</b></h5>
+	  <div id="id01"></div>
+
+	  <script>
+		var xmlhttp = new XMLHttpRequest();
+		var url = "https://emma.pixnet.cc/mainpage/blog/categories/hot/41?page=1&per_page=3&api_version=2&format=json";
+
+		xmlhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				var myArr = JSON.parse(this.responseText);
+				myFunction(myArr);  } };
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+
+		function myFunction(arr) {
+			var out = "";
+			var data = arr.articles;
+			var i;
+			for (i = 0; i < data.length; i++) {
+				if ( data[i].thumb != "" ) out += '<img src="' + data[i].thumb + '" style="float:left;margin-left:20px;margin-right:20px;"/>';
+				if ( data[i].title != "" ) out += '<p style="text-indent:0em;"><a href="' + data[i].link + '" target="_blank">' + data[i].title + '</a></p>'; 	
+				if ( data[i].tags.length != 0 ) {
+					out += '<p style="text-indent:0em;">';
+					if (data[i].tags.length >= 5) {
+						for (j = 0; j < 6 ; j++) {
+							if ( j == 5 ) {
+								out += data[i].tags[j].tag + '... ';} 
+							else {
+								out += data[i].tags[j].tag + ', ';} } }
+					else {
+						for (j = 0; j < data[i].tags.length ; j++) {
+							if ( j == data[i].tags.length - 1 ) {
+								out += data[i].tags[j].tag + '... ';} 
+							else {
+								out += data[i].tags[j].tag + ', ';} } }
+					out += '</p>'; }
+				out += '<br /><br><br>';  }
+			document.getElementById("id01").innerHTML = out; }
+	  </script>
+	  
+	  
+	  
+	  <footer class="page-footer">
+        <div class="container">
+          日式庭園與日本三名園
+        </div>
+      </footer>
+	  
+	</body>
+  </html>
